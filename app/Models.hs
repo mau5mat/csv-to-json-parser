@@ -1,9 +1,12 @@
 {-# LANGUAGE DeriveGeneric #-}
 
-module Models (Person(..), Course(..), DigitalTest(..)) where
+module Models (Person(..),
+               Course(..),
+               DigitalTest(..)
+              ) where
 
-import GHC.Generics (Generic)
-import Data.Aeson (ToJSON)
+import GHC.Generics   (Generic)
+import Data.Aeson     (ToJSON)
 import Data.Text.Lazy (Text)
 
 data Person = Person
